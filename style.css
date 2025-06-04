@@ -1,0 +1,251 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header,
+footer {
+  color: #26332b;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #57ba7c;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+.menu a {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: 650;
+  transition: background 0.3s;
+}
+
+.menu a:last-child {
+  border-right: none;
+}
+
+.menu a:hover {
+  background-color: #37fa7e;
+  color: #47504a;
+  border-radius: 6px;
+}
+.about {
+  padding: 15px;
+  font-size: 15px;
+}
+.auth-links {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+
+.auth-links a {
+  padding: 9px;
+  text-decoration: none;
+  color: #fff;
+  background: #47504a;
+  border-radius: 5px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: background 0.3s;
+}
+.auth-links a:hover {
+  background-color: #37fa7e;
+  color: #47504a;
+}
+
+.about {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: #bef8d4;
+  border: 1px solid #47504a;
+}
+.about img {
+  border-radius: 100%;
+  display: block;
+  border: 2px solid #000000;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
+  justify-items: center;
+  align-items: stretch;
+  gap: 25px;
+}
+.gallery-item {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: #dcffe9;
+  padding: 5px;
+  border-radius: 6px;
+  text-align: center;
+  justify-items: center;
+}
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-size: small;
+  font-weight: 400;
+  color: #26332b;
+}
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f04b18;
+  margin-top: auto;
+}
+
+.gallery-item button {
+  background-color: #80c59a;
+  color: #000000;
+  border: none;
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+  width: 50%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  transition: background 0.3s;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 25px;
+  margin: 15px;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background-color: transparent;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 6px;
+  min-width: 150px;
+  padding: 5px 0 5px 0;
+  color: #f8f6f6;
+  position: relative;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card .badge {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: crimson;
+  color: white;
+  font-size: 12px;
+  font-weight: 550;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+form {
+  width: 66%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid rgb(0, 77, 0);
+  border-radius: 6px;
+  background-color: rgb(226, 236, 209);
+}
+
+legend {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 750;
+  text-align: center;
+}
+fieldset {
+  border: 1px solid darkgreen;
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+.form-row label {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 150px;
+  text-align: left;
+  font-weight: 750;
+  padding: 5px;
+}
+.form-row input {
+  display: inline-block;
+  width: 200px;
+  padding: 5px;
+}
+input:focus,
+textarea:focus {
+  border-color: #ec2d9d;
+  outline: none;
+  border-radius: 5px;
+}
+.form-actions {
+  text-align: left;
+}
+button:hover {
+  background-color: rgb(133, 209, 175);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+  transition: background 0.2s;
+}
+::placeholder {
+  color: #a69790;
+}
+label input[type="checkbox"] {
+  vertical-align: auto;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  accent-color: olivedrab;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: olivedrab;
+  margin: 15px 0;
+  padding: 5px;
+  color: #000000;
+  text-align: center;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 6, 1);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
