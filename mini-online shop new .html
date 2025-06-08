@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="with=device-width, initial-scale01.0" />
+    <title>Athleo</title>
+    <link
+      rel="icon"
+      href="https://www.svgrepo.com/show/535119/a.svg"
+      type="image/svg"
+      height="32"
+      width="32"
+    />
+    <link rel="stylesheet" href="style + adaptation.css" />
+  </head>
+  <body>
+    <div class="layout"></div>
+    <header id="top">
+      <img
+        src="https://www.svgrepo.com/show/21814/sport-centre.svg"
+        alt="Логотип"
+        class="logo"
+      />
+      <h1>Athleo - спорядження для чемпіонів!</h1>
+      <nav class="menu">
+        <a href="#"> Особистий кабінет </a>
+        <a href="#"> Каталог </a>
+        <a href="#"> Фото галерея </a>
+        <a href="#"> Корисна інформація </a>
+        <a href="#"> Зв'язатись із нами </a>
+        <a href="#"> Кошик </a>
+      </nav>
+      <div class="auth-links">
+        <a href="login">Увійти</a>
+        <a href="register" class="signup">Реєстрація</a>
+      </div>
+    </header>
+    <main class="content">
+      <section class="about">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="sport"
+        />
+
+        <p>
+          Ласкаво просимо до <strong> Athleo </strong> – онлайн-магазину, де
+          активний спосіб життя стає ще доступнішим! Тут ти знайдеш все
+          необхідне для спорту, фітнесу та активного дозвілля.
+          <strong> Спортивні товари </strong> – тренажери, аксесуари,
+          екіпірування та спорядження для будь-якого рівня підготовки. 🚴<strong>
+            Товари для активного дозвілля
+          </strong>
+          – велоспорт, туризм, кемпінг, йога та відпочинок на природі. Якість та
+          комфорт – ми обираємо найкращі бренди, щоб ти отримав продукцію, яка
+          допоможе досягти нових вершин. З Athleo кожен день – це можливість
+          бути сильнішим, витривалішим і щасливішим! 💪 Роби перший крок до
+          нових досягнень вже сьогодні!
+        </p>
+      </section>
+      <section>
+        <h2>Каталог товарів</h2>
+        <div class="gallery">
+          <div class="gallery-item">
+            <figure>
+              <img
+                src="https://thumblr.uniid.it/product/368763/783568dcbe37.jpg?width=3840&format=webp&q=75"
+                alt="running shoes"
+                title="Бігові кросівки"
+              />
+              <figcaption>
+                <strong>Бігові кросівки </strong> <br />
+                Легкі та зручні, забезпечують амортизацію для комфортного бігу
+              </figcaption>
+            </figure>
+            <div class="price">&#8372;4000</div>
+            <button>Купити</button>
+          </div>
+          <div class="gallery-item">
+            <figure>
+              <img
+                src="https://desport.com.ua/image/cache/catalog/photo/6/553336060-ganteli-2-sht-po-21-kg-desport-elite-s-metallicheskim-grifom-sn-1000x1000.jpg"
+                alt="barbells"
+                title="Гантелі"
+              />
+              <figcaption>
+                <strong>Гантелі</strong><br />Ідеальні для силових тренувань,
+                доступні в різних вагах.
+              </figcaption>
+            </figure>
+            <div class="price">&#8372;2500</div>
+            <button>Купити</button>
+          </div>
+
+          <div class="gallery-item">
+            <figure>
+              <img
+                src="https://www.tokishop.com.ua/image/cache/catalog/image/cache/catalog/drugie-tovary-folder/4/wp-content-uploads-2021-04-NBR-183-61-1-jpg_q50-400x400.webp"
+                alt="mat"
+                title="Фітнес-килимок"
+              />
+              <figcaption>
+                <strong>Фітнес-килимок </strong><br />
+                Використовується для йоги, пілатесу та вправ на підлозі.
+              </figcaption>
+            </figure>
+            <div class="price">&#8372;599</div>
+            <button>Купити</button>
+          </div>
+          <div class="gallery-item">
+            <figure>
+              <img
+                src="https://img.hop-sport.ua/catalog/p/hopsport/2450/00-500x0.webp?ts=1642705710"
+                alt="skipping rope"
+                title="Скакалка"
+              />
+              <figcaption>
+                <strong>Скакалка </strong><br />Допомагає покращити
+                кардіо-тренування та координацію.
+              </figcaption>
+            </figure>
+            <div class="price">&#8372;700</div>
+            <button>Купити</button>
+          </div>
+          <div class="gallery-item">
+            <figure>
+              <img
+                src="https://bodymarket.ua/img/p/9/9/1/991-thickbox_default.jpg"
+                alt="sport bottle"
+                title="Спортивна пляшка"
+              />
+              <figcaption>
+                <strong>Спортивна пляшка </strong><br />
+                Зручна для гідратації під час тренувань.
+              </figcaption>
+            </figure>
+            <div class="price">&#8372;600</div>
+            <button>Купити</button>
+          </div>
+          <div class="gallery-item">
+            <figure>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3XyqaeEE7fjEZiPc9ZfjFiRI2wh1U63h03g&s"
+                alt="TRX training loops"
+                title="Тренувальні петлі TRX"
+              />
+              <figcaption>
+                <strong> Тренувальні петлі TRX </strong><br />Використовуються
+                для функціональних тренувань.
+              </figcaption>
+            </figure>
+            <div class="price">&#8372;1500</div>
+            <button>Купити</button>
+          </div>
+          <div class="gallery-item">
+            <figure>
+              <img
+                src="https://mma-shop.com.ua/image/cache/catalog/venum/bokserskie-perchatki/avtoroirazdel/bokserskieperchatkivenumeliteboxinggloveskhakicamo/bokserskieperchatkivenumeliteboxinggloveskhakicamo1-700x700.jpg"
+                alt="boxing gloves"
+                title="Боксерські рукавиці"
+              />
+              <figcaption>
+                <strong>Боксерські рукавиці</strong><br />Захищають руки під час
+                тренувань з боксу.
+              </figcaption>
+            </figure>
+            <div class="price">&#8372;3000</div>
+            <button>Купити</button>
+          </div>
+          <div class="gallery-item">
+            <figure>
+              <img
+                src="https://contents.mediadecathlon.com/p2718920/k$5bd739d5a6e579fdd8813fc7d0564fd7/balansirovochnyj-disk.jpg?f=452x452"
+                alt="fitness balance-board"
+                title="Фітнес-балансборд"
+              />
+              <figcaption>
+                <strong> Фітнес-балансборд </strong><br />Покращує баланс та
+                стабільність.
+              </figcaption>
+            </figure>
+            <div class="price">&#8372;1400</div>
+            <button>Купити</button>
+          </div>
+          <div class="gallery-item">
+            <figure>
+              <img
+                src="https://brain.com.ua/static/images/prod_img/6/8/U0503168_1744240539.jpg"
+                alt="espander"
+                title="Еспандер"
+              />
+              <figcaption>
+                <strong>Еспандер </strong><br />Допомагає розвивати силу та
+                гнучкість м’язів.
+              </figcaption>
+            </figure>
+
+            <div class="price">&#8372;850</div>
+            <button>Купити</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://cdn.courtside.se/_files/productmedia/Thumbnail_Large/11838_26650.webp"
+              alt="pin pong"
+              title="Ракетки для настільного тенісу"
+            />
+            <figcaption class="popular">
+              <strong> Ракетки для настільного тенісу </strong><br />
+            </figcaption>
+
+            <div class="price">&#8372;3000</div>
+            <span class="badge">ПОПУЛЯРНИЙ ТОВАР!</span>
+            <button>Купити</button>
+          </div>
+          <div class="card">
+            <img
+              src="https://img.hop-sport.ua/h/666ae1c45f8b58901969a0332e515f4c-500x0.webp?ts=1730124582"
+              alt="hulahoop"
+              title="Хулахуп с массажером"
+            />
+            <figcaption class="popular">
+              <strong>Хулахуп </strong><br />
+              Хулахуп із масажером, 41 - 105см
+            </figcaption>
+            <div class="price">&#8372;1500</div>
+
+            <span class="badge">ПОПУЛЯРНИЙ ТОВАР!</span>
+            <button>Купити</button>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzVOFMc1aTw7OoKiBDf73YpBVSiC0YXTmYBg&s"
+              alt="sleeping bag"
+              title="Спальник"
+            />
+            <figcaption class="popular">
+              <strong> Спальний мішок </strong><br />
+              спальник весна-осінь +5С Ukr Military VND, Україна оливковий
+              210х75 см
+            </figcaption>
+
+            <span class="badge">ПОПУЛЯРНИЙ ТОВАР!</span>
+            <div class="price">&#8372;3555</div>
+
+            <button>Купити</button>
+          </div>
+        </div>
+      </section>
+
+      <sidebar class="sidebar">
+        <form action="/costumer" method="post" class="form-container">
+          <legend>Форма для зворотнього зв'язку</legend>
+          <div class="grid-input">
+            <div class="form-row">
+              <label for="name"> Ім'я: </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder=" Ірина "
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="Email"> E-mail: </label>
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                required
+                placeholder="example@gmail.com"
+              />
+            </div>
+
+            <label for="msg"> Залиште Ваше повідомлення </label>
+
+            <textarea
+              class="textarea"
+              id="msg"
+              name="message"
+              rows="5"
+              cols="50"
+              required
+            >
+            </textarea>
+          </div>
+
+          <label>
+            <input type="checkbox" name="agree" checked required />
+            Я згоден(на) з умовами обробки даних
+          </label>
+
+          <div class="form-actions">
+            <button type="submit">Відправити</button>
+          </div>
+        </form>
+      </sidebar>
+    </main>
+    <footer class="footer">
+      <div class="contacts"><a href="tel:+380956666666667">Подзвонити</a></div>
+      <div class="contacts">
+        <a href="mailto:info@example.com">Написати листа</a>
+      </div>
+      <div class="contacts">&copy;LCC IV</div>
+      <a href="#top" class="to-top">&#8593;</a>
+    </footer>
+  </body>
+</html>
